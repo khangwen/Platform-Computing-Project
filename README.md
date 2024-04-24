@@ -1,6 +1,6 @@
 # Final Project
 
-PROVIDE OVERVIEW OF ASSIGNMENT HERE
+Curating a website within our team to create the best performing website to users using all the tools previosuly learned in this course. The idea is to have a website that will keep people's attention long enough on the wesbite to make a profit.
 
 Time spent: **NUMBER_HOURS_SPENT** hours spent in total
 
