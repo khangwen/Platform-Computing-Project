@@ -1,0 +1,85 @@
+body {
+    height: 350vh;
+    width: 300px 300px;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: scroll;
+}
+
+.First {
+   background-color:darkgoldenrod;
+   width: 400px;
+   height: 300px;
+   padding: 50px 30px;
+   margin:auto;
+   position: absolute;
+   transform: translate(70%, 20%);
+   box-shadow: 0px 5px 10px darkgreen;
+   border-radius: 20px;
+   border-block-style: groove; 
+   text-align: center;
+   font-family:Courier New, Courier, monospace;
+   
+}
+.Second {
+    background-color: darkgoldenrod;
+    width: 500px;
+    height: 250px;
+    padding: 50px 30px;
+    margin-bottom: 0px;
+    position: absolute;
+    transform: translate(50%, 145%);
+    box-shadow: 0px 5px 10px darkgreen;
+    border-radius: 20px;
+    border-block-style: groove;
+    text-align: center;
+    font-family: Courier New, Courier, monospace;
+}
+.Third {
+    background-color: darkgoldenrod;
+    width: 500px;
+    height: 300px;
+    padding: 50px 30px;
+    margin-bottom: 0px;
+    position: absolute;
+    transform: translate(50%, 220%);
+    box-shadow: 0px 5px 10px darkgreen;
+    border-radius: 20px;
+    border-block-style: groove;
+    text-align: center;
+    font-family: Courier New, Courier, monospace;
+}
+button {
+    position: center;
+    background-color: deepskyblue;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer; /*an input for your cursor to change image when hovering over something */
+    transition-duration: 0.9s;
+}
+button:hover {
+
+    background-color:firebrick;
+}
+.Divider {
+    position: center;
+    width: 100px;
+    transform: translate(500px, 500px);
+}
+.Divider2 {
+    position: center;
+    width: 100px;
+    transform: translate(500px, 875px);
+}
+.GoodbyeDivider {
+    position: center;
+    width: 100px;
+    transform: translate(450px, 1300px);
+}
+footer {
+    position: center;
+    color: floralwhite;
+    transform: translate(515px, 1350px);
+    font-family:'Poor Richard';
+}
