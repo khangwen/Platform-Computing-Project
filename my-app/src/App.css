@@ -1,0 +1,193 @@
+.App {
+  width: 200px;
+  height: 200px;
+  padding: 50px 30px;
+  position: absolute;
+  transform: translate(150%, -20%);
+}
+
+.App-logo {
+  pointer-events: none;
+  display: flex;
+  width: 220px;
+  height: 200px;
+  box-shadow: 0px 5px 10px darkgreen;
+  border-radius: 200px;
+  border-block-style: groove;
+  text-align: center;
+  font-family: Courier New, Courier, monospace;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation-name: App-Logo-floating;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    /*animation: App-logo-spin infinite 20s linear;*/
+  }
+}
+
+/*
+.App-header {
+background-color: #282c34;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+font-size: calc(10px + 2vmin);
+color: white;
+}
+*/
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-Logo-floating {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  50% {
+    transform: translate(0px, 20px);
+  }
+
+  100% {
+    transform: translate(0px, -0px);
+  }
+}
+
+@keyframes Pika-Across {
+  0% {
+    left: -75%;
+  }
+
+  100% {
+    left: 500%;
+    right: 18%;
+  }
+
+}
+
+body {
+  height: 500vh;
+  width: 300px 200px;
+  background-image: url("assets/img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+.First {
+  background-color: darkgoldenrod;
+  width: 400px;
+  height: 300px;
+  padding: 50px 30px;
+  margin: auto;
+  position: absolute;
+  transform: translate(-400px, 30px);
+  box-shadow: 0px 5px 10px darkgreen;
+  border-radius: 20px;
+  border-block-style: groove;
+  text-align: center;
+  font-family: 'Century Gothic';
+}
+
+.Second {
+  background-color: darkgoldenrod;
+  width: 500px;
+  height: 250px;
+  padding: 50px 30px;
+  margin-bottom: 0px;
+  position: absolute;
+  transform: translate(100px, 57px);
+  box-shadow: 0px 5px 10px darkgreen;
+  border-radius: 20px;
+  border-block-style: groove;
+  text-align: center;
+  font-family: 'Century Gothic';
+}
+
+.Third {
+  background-color: darkgoldenrod;
+  width: 500px;
+  height: 300px;
+  padding: 50px 30px;
+  margin-bottom: 0px;
+  position: absolute;
+  transform: translate(-150px, 630px);
+  box-shadow: 0px 5px 10px darkgreen;
+  border-radius: 20px;
+  border-block-style: groove;
+  text-align: center;
+  font-family: 'Century Gothic';
+}
+
+.Button1 {
+  position: absolute;
+  transform: translate(100px, 1100px);
+  background-color: navajowhite;
+  padding: 5px 10px;
+  border-radius: 100px;
+  cursor: pointer;
+  /*an input for your cursor to change image when hovering over something */
+  transition-duration: 0.9s;
+}
+
+button:hover {
+  background-color: firebrick;
+}
+
+.GoodbyeDivider:hover {
+  background-color: firebrick;
+}
+
+.GoodbyeDivider2 {
+  background-color: firebrick;
+}
+
+.Divider-Break {
+  position: absolute;
+  width: 320px;
+  height: 125px;
+  transform: translate(-105%, 250%);
+}
+
+.Pika {
+  position: absolute;
+  width: 320px;
+  height: 125px;
+  transform: translate(-100%, 400%);
+  animation-iteration-count: infinite;
+  animation: Pika-Across 4s ease-in-out forwards infinite;
+}
+
+.GoodbyeDivider {
+  position: absolute;
+  width: 100px;
+  transform: translate(-50px, 1070px);
+  background-color: navajowhite;
+  padding: 5px 10px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition-duration: 0.9s;
+}
+
+.GoodbyeDivider2 {
+  position: absolute;
+  width: 100px;
+  transform: translate(170px, 1060px);
+  background-color: navajowhite;
+  padding: 5px 10px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition-duration: 0.9s;
+}
+
+footer {
+  position: center;
+  color: floralwhite;
+  transform: translate(115px, 1170px);
+  font-family: 'Poor Richard';
+}
