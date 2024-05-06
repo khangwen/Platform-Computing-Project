@@ -3,8 +3,9 @@ import datetime
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import pymongo
+import pandas as pd
 
-from users.user3 import userAction
+from users.user1 import userAction
 
 # Set up MongoDB
 myclient = pymongo.MongoClient("mongodb+srv://khangwen197:HsUFKqdVgto1Qyo5@cluster0.pqitser.mongodb.net/")
@@ -39,4 +40,11 @@ print(f"Presence time: {presence_time} seconds")
 new_entry = {"Iteration": itr, "Group": group, "User": user, "PRESENCE_TIME (SEC.)": presence_time}
 mycol.insert_one(new_entry)
         
+# Close browser
 driver.quit()
+
+# Print data from MongoDB as table
+print("\nData from MongoDB:")
+metric_data = [data for data in mycol.find()]
+df_metric_data = pd.DataFrame(metric_data)
+print(df_metric_data.sort_values(by=["User"]))
