@@ -19,7 +19,7 @@ def find_link(href, driver):
     except:
         return False
 
-def userAction(driver):
+def user_action(driver):
     global total_reward_time
     reward_time = 10
     wait_time = 0
