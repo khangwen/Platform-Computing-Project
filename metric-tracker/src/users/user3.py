@@ -34,6 +34,8 @@ def userAction(action, driver, reward_time, req_list)->float:
         time.sleep(total_reward_time)
 
 def userAction(driver):
+    total_reward_time = 0
+    
     reward_time = 10
     keyword = ["student", "CSUSB", "Major", "Computer Science"]
     tag = ["img"]
