@@ -15,7 +15,7 @@ def userAction(driver):
     clicked = False
     wordFound = False
     imageBool = False
-    while int(presence_time) != end_time: # seconds
+    while int(presence_time) < end_time: # seconds
         #track time
         current_time = time.time()
         presence_time = current_time - start_time

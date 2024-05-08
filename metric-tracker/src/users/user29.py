@@ -31,7 +31,7 @@ def checkLink(driver, reward_time) -> float:
 
     return total_reward_time
 
-def userAction(action, driver, reward_time, req_list) -> float:
+def userActions(action, driver, reward_time, req_list) -> float:
     total_reward_time = 0
 
     if action.upper() == "KEYWORD":
@@ -59,14 +59,14 @@ def userAction(driver):
     total_reward_time = 0
 
     # Check for keywords
-    total_reward_time += userAction("KEYWORD", driver, reward_time, [])
+    total_reward_time += userActions("KEYWORD", driver, reward_time, [])
 
     # Check for images
-    total_reward_time += userAction("IMAGE", driver, reward_time, "img")
+    total_reward_time += userActions("IMAGE", driver, reward_time, "img")
 
 
     # Check for links
-    total_reward_time += userAction("LINK", driver, reward_time, [])
+    total_reward_time += userActions("LINK", driver, reward_time, [])
     print("Presence Time:", total_reward_time)
 
 if __name__ == "__main__":

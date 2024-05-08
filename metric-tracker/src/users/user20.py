@@ -14,7 +14,28 @@ def countTagElem(driver, tag_name)->int:
         count += len(driver.find_elements(By.TAG_NAME, tags))
     return count
 
-def userAction(action, driver, reward_time, req_list)->float:
+def userAction(driver):
+    reward_time = 10
+    total_reward_time = 0
+
+    keywords = ["CSUSB", "Cyber", "CVS", "Palword"]
+
+    tags = ["img"]
+
+    total_reward_time += userActions("KEYWORD", driver, reward_time, keywords)
+
+    total_reward_time += userActions("IMAGE", driver, reward_time, tags)
+
+    if clickLink(driver) > 0:
+        clickLink(driver)
+        total_reward_time += reward_time
+        time.sleep(reward_time)
+        time.sleep(reward_time)
+    print("Presence Time:", total_reward_time)
+
+
+
+def userActions(action, driver, reward_time, req_list)->float:
     total_reward_time = 0
     if action.upper() == "KEYWORD":
         for keyword in req_list:
@@ -41,25 +62,6 @@ def clickLink(driver):
             link.click()
     return count
 
-
-def userAction(driver):
-    reward_time = 10
-    total_reward_time = 0
-
-    keywords = ["CSUSB", "Cyber", "CVS", "Palword"]
-
-    tags = ["img"]
-
-    total_reward_time += userAction("KEYWORD", driver, reward_time, keywords)
-
-    total_reward_time += userAction("IMAGE", driver, reward_time, tags)
-
-    if clickLink(driver) > 0:
-        clickLink(driver)
-        total_reward_time += reward_time
-        time.sleep(reward_time)
-        time.sleep(reward_time)
-    print("Presence Time:", total_reward_time)
 
 if __name__ == "__main__":
     main()

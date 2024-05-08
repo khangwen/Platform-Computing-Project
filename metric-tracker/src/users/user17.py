@@ -13,15 +13,14 @@ def userAction(driver)->float:
 	rewardTime = 10
 	tags = ["img", "p"]
 	totalTime = 0
-	keywords = reqList
 		
-		for elements in tags:
-			imageNum = imageCount(driver, elements)
-			print("found", imageNum, elements, "elements")
-			time.sleep(rewardTime)
-			totalTime += (rewardTime*imageNum)
-			if (imageNum == 0):
-				print("no image(s) found")
+	for elements in tags:
+		imageNum = imageCount(driver, elements)
+		print("found", imageNum, elements, "elements")
+		time.sleep(rewardTime)
+		totalTime += (rewardTime*imageNum)
+		if (imageNum == 0):
+			print("no image(s) found")
 
 	return totalTime
 

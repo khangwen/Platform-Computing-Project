@@ -42,12 +42,12 @@ def userAction(driver):
         presence_with = measure_presence_time_with_scroll(driver, driver.current_url, keyword)
 
         print(f"Total presence time with preference: {presence_with:.2f} seconds")
-        print(f"Total presence time without preference: {presence_without:.2f} seconds")
+        
 
     except Exception as e:
         print(f"An error occurred: {e}")
     finally:
-        driver.quit()
+        print("done")
 
 if __name__ == "__main__":
     main()

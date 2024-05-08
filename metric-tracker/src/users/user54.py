@@ -28,7 +28,7 @@ driver : web driver
 reward_time : value to wait on site
 req_list : list of either keyword or element tag
 '''
-def userAction(action, driver, reward_time, req_list)->float:
+def userActions(action, driver, reward_time, req_list)->float:
     total_reward_time = 0
     if action.upper() == "KEYWORD":
             for keyword in req_list:
@@ -48,9 +48,9 @@ def userAction(action, driver, reward_time, req_list)->float:
 
 def userAction(driver):
     reward_time = 2
-    total_reward_time = userAction("KEYWORD", driver, reward_time, ["Guatemala", "Spanish", "Japanese"])
+    total_reward_time = userActions("KEYWORD", driver, reward_time, ["Guatemala", "Spanish", "Japanese"])
     tag_name = ["img"]
-    total_reward_time += userAction("IMAGE", driver, reward_time, tag_name)
+    total_reward_time += userActions("IMAGE", driver, reward_time, tag_name)
     print("Present Time:", total_reward_time, "seconds")
 
 if __name__ == "__main__":

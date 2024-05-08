@@ -5,12 +5,8 @@ from selenium.webdriver.common.by import By
 def count_elem(driver, tag_name):
     return len(driver.find_elements(By.TAG_NAME, tag_name))
 
-def main():
-    # Initialize browser
-    driver = webdriver.Chrome()
+def userAction(driver):
 
-    # Navigate to your website 
-    driver.get("http://localhost:3000/")
     
     # Define the tag names to search for
     tags = ["button"]
@@ -27,9 +23,7 @@ def main():
     
     # Simulate user presence for the total reward time
     time.sleep(total_reward_time)
-    
-    # Quit the browser
-    driver.quit()
+
     
     print("Presence Time:", total_reward_time)
 

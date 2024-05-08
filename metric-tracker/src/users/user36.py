@@ -21,7 +21,7 @@ driver : wed driver
 reward_time : value to wait on site
 req_list : list of either keyword or element tag
 '''
-def userAction(action, driver, reward_time, req_list)->float:
+def userActions(action, driver, reward_time, req_list)->float:
     total_reward_time = 0
     if action.upper() == "KEYWORD":
         for keyword in req_list:
@@ -51,9 +51,9 @@ def userAction(driver):
     # seconds added when user finds keyword, image, and/or link
     reward_time = 10
     # update total reward time when user detects keyword(s)
-    total_reward_time = userAction("KEYWORD", driver, reward_time, ["about", "name"])
+    total_reward_time = userActions("KEYWORD", driver, reward_time, ["about", "name"])
     # update total reward time when user detects a link(s)
-    total_reward_time += userAction("LINK", driver, reward_time, [])
+    total_reward_time += userActions("LINK", driver, reward_time, [])
     # clickLink(driver) (does not work)
     time.sleep(total_reward_time)
 

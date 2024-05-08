@@ -16,7 +16,7 @@ def userAction(driver):
     check = False
     imageBool = False
     linkchecker = False
-    while int(presence_time) != int(end_time): # seconds
+    while int(presence_time) <= int(end_time): # seconds
         #track time
         current_time = time.time()
         presence_time = current_time - start_time

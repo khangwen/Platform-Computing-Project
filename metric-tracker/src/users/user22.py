@@ -9,7 +9,7 @@ def findKeyword(driver, keyword)->bool:
 def imageCount(driver, tag_name)->int:
 	return len(driver.find_elements(By.TAG_NAME,tag_name))
 
-def userAction(action, driver, rewardTime, reqList)->float:
+def userActions(action, driver, rewardTime, reqList)->float:
 	totalTime = 0
 	keywords = reqList
 	if action.upper() == "KEYWORD":
@@ -35,10 +35,10 @@ def userAction(action, driver, rewardTime, reqList)->float:
 def userAction(driver):
 
 	rewardTime = 5
-	totalTime = userAction("KEYWORD", driver, rewardTime, ["hobbies", "engineer", "experience"])
+	totalTime = userActions("KEYWORD", driver, rewardTime, ["hobbies", "engineer", "experience"])
 	tag_name = ["img"]
 	rewardTime= 10
-	totalTime += userAction("IMAGE", driver, rewardTime, tag_name)
+	totalTime += userActions("IMAGE", driver, rewardTime, tag_name)
 	time.sleep(totalTime)
 
 	print("Presence Time:", totalTime)

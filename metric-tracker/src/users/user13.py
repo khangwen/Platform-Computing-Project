@@ -13,13 +13,13 @@ def countTagElem(driver, tag_name):
     for tag in tag_name:
         count += len(driver.find_elements(By.TAG_NAME, tag))
     return count
- 
+
 def userAction(driver):
     reward_time = 10
     total_reward_time = 0
 
     # Prompt user for action type
-    action_type = input("Enter action type (KEYWORD/IMAGE/LINK/BUTTON): ")
+    action_type = "BUTTON"
 
     if action_type.upper() == "KEYWORD":
         for keyword in ["steven", "game", "anime", "movie", "sports"]:
@@ -49,7 +49,7 @@ def main():
     driver = webdriver.Chrome()
     # Navigate to your website
     driver.get("http://localhost:3000/")
-    
+
     total_reward_time = userAction(driver)
     driver.quit()
 

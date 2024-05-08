@@ -10,13 +10,13 @@ from selenium.webdriver.support import expected_conditions as EC
 
 def userAction(driver):
     start_time = time.time()
-    driver.get(url)
+
     time.sleep(random.uniform(5, 10))  # Random sleep to simulate reading time
 
     # Check for images on the page
     images = driver.find_elements(By.TAG_NAME, "img")
     if not images:  # If there are no images, reduce the base presence time
-        print(f"No images found on {url}. Reducing presence time.")
+        print(f"No images found. Reducing presence time.")
         base_presence_time = 5  # Reduced base presence time
     else:
         base_presence_time = 10  # Default base presence time if images are found

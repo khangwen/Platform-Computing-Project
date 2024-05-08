@@ -17,7 +17,7 @@ def clickLink(driver, tag_name):
     for link in links:
         link.click()
 
-def userAction(action, driver, rewardTime, reqList)->float:
+def userActions(action, driver, rewardTime, reqList)->float:
     totalRewardTime = 0
     if action.upper() == "KEYWORD":
         for keyword in reqList:
@@ -45,11 +45,9 @@ def userAction(driver):
     keywords = ["student", "CSUSB"]
     tagNames = ["img"]
     link = ["a"]
-    totalRewardTime += userAction("KEYWORD", driver, rewardTime, keywords)
-    totalRewardTime += userAction("IMAGE", driver, rewardTime, tagNames)
-    totalRewardTime += userAction("LINK", driver, rewardTime, link)
-
-    driver.quit()
+    totalRewardTime += userActions("KEYWORD", driver, rewardTime, keywords)
+    totalRewardTime += userActions("IMAGE", driver, rewardTime, tagNames)
+    totalRewardTime += userActions("LINK", driver, rewardTime, link)
 
     print("Presence Time", totalRewardTime)
 

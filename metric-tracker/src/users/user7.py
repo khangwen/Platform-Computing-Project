@@ -61,7 +61,7 @@ def userAction(driver: WebDriver) -> None:
     
     current_time: float = round(time.time(), 2)
     presence_time = abs(round(current_time - start_time, 2))
-    print(f"Presence time on {URL}: {presence_time}s")
+    print(f"Presence time on: {presence_time}s")
 
 
 
