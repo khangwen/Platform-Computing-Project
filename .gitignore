@@ -1,1 +1,3 @@
 metric-tracker/venv
+metric-tracker/scraped_images
+metric-tracker/src/users/__pycache__
