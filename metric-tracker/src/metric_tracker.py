@@ -16,6 +16,17 @@ from users import user54 as user_file54
 from users import user56 as user_file56
 from users import user58 as user_file58
 
+from users import user1 as user_file1
+from users import user12 as user_file12
+from users import user15 as user_file15
+from users import user16 as user_file16
+from users import user34 as user_file34
+from users import user35 as user_file35
+from users import user40 as user_file40
+from users import user42 as user_file42
+from users import user47 as user_file47
+from users import user60 as user_file60
+
 def metricTracker(user_file, itr, group, user):
     # Set up MongoDB
     myclient = pymongo.MongoClient("mongodb+srv://khangwen197:HsUFKqdVgto1Qyo5@cluster0.pqitser.mongodb.net/")
@@ -55,13 +66,27 @@ def metricTracker(user_file, itr, group, user):
     print(df_metric_data.sort_values(by=["Group", "User"]))
 
 if __name__ == "__main__":
-    metricTracker(user_file2, 0, "Control", "User2")
-    metricTracker(user_file6, 0, "Control", "User6")
-    metricTracker(user_file7, 0, "Control", "User7")
-    metricTracker(user_file13, 0, "Control", "User13")
-    metricTracker(user_file17, 0, "Control", "User17")
-    metricTracker(user_file20, 0, "Control", "User20")
-    metricTracker(user_file27, 0, "Control", "User27")
-    metricTracker(user_file54, 0, "Control", "User54")
-    metricTracker(user_file56, 0, "Control", "User56")
-    metricTracker(user_file58, 0, "Control", "User58")
+    group1 = "Control"  
+    group2 = "Test"
+
+    metricTracker(user_file2, 0, group1, "User2")
+    metricTracker(user_file6, 0, group1, "User6")
+    metricTracker(user_file7, 0, group1, "User7")
+    metricTracker(user_file13, 0, group1, "User13")
+    metricTracker(user_file17, 0, group1, "User17")
+    metricTracker(user_file20, 0, group1, "User20")
+    metricTracker(user_file27, 0, group1, "User27")
+    metricTracker(user_file54, 0, group1, "User54")
+    metricTracker(user_file56, 0, group1, "User56")
+    metricTracker(user_file58, 0, group1, "User58")
+
+    metricTracker(user_file1, 0, group2, "User1")
+    metricTracker(user_file12, 0, group2, "User12")
+    metricTracker(user_file15, 0, group2, "User15")
+    metricTracker(user_file16, 0, group2, "User16")
+    metricTracker(user_file34, 0, group2, "User34")
+    metricTracker(user_file35, 0, group2, "User35")
+    metricTracker(user_file40, 0, group2, "User40")
+    metricTracker(user_file42, 0, group2, "User42")
+    metricTracker(user_file47, 0, group2, "User47")
+    metricTracker(user_file60, 0, group2, "User60")
