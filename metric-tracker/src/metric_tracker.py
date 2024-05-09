@@ -5,13 +5,13 @@ from selenium.webdriver.common.by import By
 import pymongo
 import pandas as pd
 
-from users.user1 import userAction
+from users import user1 as user_file
 
 # Set up MongoDB
 myclient = pymongo.MongoClient("mongodb+srv://khangwen197:HsUFKqdVgto1Qyo5@cluster0.pqitser.mongodb.net/")
 mydb = myclient["CSE4200"]
 
-mycol = mydb["Metrics2"]
+mycol = mydb["Metrics3"]
 
 # Initialize browser
 driver = webdriver.Firefox()
@@ -29,7 +29,7 @@ start_time = time.time()
 presence_time = start_time
 
 # User action
-userAction(driver)
+user_file.userAction(driver)
 
 # Calculate presence time
 current_time = time.time()
@@ -47,4 +47,4 @@ driver.quit()
 print("\nData from MongoDB:")
 metric_data = [data for data in mycol.find()]
 df_metric_data = pd.DataFrame(metric_data)
-print(df_metric_data.sort_values(by=["User"]))
+print(df_metric_data.sort_values(by=["Group", "User"]))
