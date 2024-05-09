@@ -5,6 +5,8 @@ from selenium.webdriver.common.by import By
 import pymongo
 import pandas as pd
 
+# Import users for iterative testing
+# Group 1 users ~ 24 total
 from users import user2 as user_file2
 from users import user6 as user_file6
 from users import user7 as user_file7
@@ -16,6 +18,22 @@ from users import user54 as user_file54
 from users import user56 as user_file56
 from users import user58 as user_file58
 
+# from users import user3 as user_file3
+# from users import user8 as user_file8
+# from users import user22 as user_file22
+# from users import user23 as user_file23
+# from users import user25 as user_file25
+# from users import user30 as user_file30
+# from users import user32 as user_file32
+# from users import user33 as user_file33
+# from users import user41 as user_file41
+# from users import user43 as user_file43
+# from users import user46 as user_file46
+# from users import user48 as user_file48
+# from users import user51 as user_file51
+# from users import user57 as user_file57
+
+# Group 2 users ~ 25 total
 from users import user1 as user_file1
 from users import user12 as user_file12
 from users import user15 as user_file15
@@ -26,6 +44,22 @@ from users import user40 as user_file40
 from users import user42 as user_file42
 from users import user47 as user_file47
 from users import user60 as user_file60
+
+# from users import user5 as user_file5
+# from users import user10 as user_file10
+# from users import user14 as user_file14
+# from users import user21 as user_file21
+# from users import user24 as user_file24
+# from users import user26 as user_file26
+# from users import user31 as user_file31
+# from users import user39 as user_file39
+# from users import user44 as user_file44
+# from users import user45 as user_file45
+# from users import user52 as user_file52
+# from users import user53 as user_file53
+# from users import user55 as user_file55
+# from users import user59 as user_file59
+# from users import user61 as user_file61
 
 def metricTracker(user_file, itr, group, user):
     # Set up MongoDB
