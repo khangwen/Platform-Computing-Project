@@ -74,7 +74,7 @@
 body {
     height: 500vh;
     width: 100px;
-    background-image: url("background.jpg");
+    background-image: url('./assets/img/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
@@ -142,7 +142,7 @@ body {
 .Fifth {
     background-color: darkgoldenrod;
     width: 500px;
-    height: 525px;
+    height: 700px;
     padding: 50px 30px;
     margin-bottom: 0px;
     position: absolute;
