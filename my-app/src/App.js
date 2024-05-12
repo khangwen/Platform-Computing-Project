@@ -123,9 +123,21 @@ function App() {
                 <p>
                     Roast Red Dragon <br />
                     <hr />
+                    1 kilogram of Red Dragon meat
+                    50 milliliters of wine
+                    Salt and pepper (to taste)
                     Dragon Tail Soup <br />
                     <hr />
+                    1 kilogram Red Dragon Tail
+                    1 Onion
+                    1 Turnip
+                    Salt and pepper (to taste)
                     Onion Pizza Bread <br />
+                    <hr />
+                    Pizza Dough
+                    2 Onions
+                    Cheese (as desired)
+
                     
                 </p>
             </header>
