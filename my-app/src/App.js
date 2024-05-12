@@ -85,6 +85,51 @@ function App() {
                 </p>
             </header>
 
+            {/*Fourth Paragraph*/}
+            <header className="Fourth">
+                <p>
+                    <h1 style={{color: 'darkcyan', fontWeight: 'bold', fontFamily: 'Copperplate, Papyrus, fantasy'}}>
+                        Huge Scorpion and Walking Mushroom Hotpot <br />
+                    </h1>
+                    <hr />
+                    <h2 style={{ color:'brown', fontFamily: 'Malgun Gothic', fontWeight: 'bold' }}>Crustation and Mushroom Hotpot <br /> Serves 3-4 </h2>
+                    What's better than a big ol' pot huge scorpion and possibly sentient mushrooms? I can't think of much. This early adventurer friendly recipe does have some pre-prepared ingredients, but don't worry! They're not neccesary for a well rounded, nutricious meal!
+                    <hr />
+                </p>
+                <h3>Ingredients:</h3>
+                <p>
+                    1 Huge Scorpion <br />
+                    1 Walking Mushroom <br />
+                    2 Mushroom Feet <br />
+                    Seaweed (as needed) <br />
+                    5 Medium sized Invertatoes <br />
+                    Dried Slime (To preference) <br />
+                    Water (as needed) <br />
+                </p>
+            </header>
+
+            {/*Fifth Paragraph*/}
+            <header className="Fifth">
+                <p>
+                    <h1 style={{color: 'darkcyan', fontWeight: 'bold', fontFamily: 'Copperplate, Papyrus, fantasy'}}>
+                        Red Dragon Meal <br />
+                    </h1>
+                    <hr />
+                    <h2 style={{ color:'brown', fontFamily: 'Malgun Gothic', fontWeight: 'bold' }}>Roast, Soup, Pizza <br /> Serves 3-4 </h2>
+                    Have you ever killed a red dragon and thought to yourself, 'What am I gonna do with all this meat?' Well here's your answer! Enjoy a feast fit for even the maddest of mages including a nice Roast Red Dragon, Dragon Tail Soup, and Onion Pizza Bread
+                    <hr />
+                </p>
+                <h3>Ingredients:</h3>
+                <p>
+                    Roast Red Dragon <br />
+                    <hr />
+                    Dragon Tail Soup <br />
+                    <hr />
+                    Onion Pizza Bread <br />
+                    
+                </p>
+            </header>
+
             {/*Ending Space*/}
             <header className="Ending">
                 <footer>
