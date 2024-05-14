@@ -112,7 +112,7 @@ body {
 .Third {
     background-color: darkgoldenrod;
     width: 500px;
-    height: 300px;
+    height: 650px;
     padding: 50px 30px;
     margin-bottom: 0px;
     position: absolute;
@@ -131,7 +131,7 @@ body {
     padding: 50px 30px;
     margin-bottom: 0px;
     position: absolute;
-    transform: translate(150px, 1600px);
+    transform: translate(150px, 1950px);
     box-shadow: 0px 5px 10px darkgreen;
     border-radius: 20px;
     border-block-style: groove;
@@ -142,11 +142,11 @@ body {
 .Fifth {
     background-color: darkgoldenrod;
     width: 500px;
-    height: 525px;
+    height: 700px;
     padding: 50px 30px;
     margin-bottom: 0px;
     position: absolute;
-    transform: translate(-400px, 2300px);
+    transform: translate(-400px, 2625px);
     box-shadow: 0px 5px 10px darkgreen;
     border-radius: 20px;
     border-block-style: groove;

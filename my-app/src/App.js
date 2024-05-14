@@ -78,10 +78,36 @@ function App() {
             <header className="Third">
                 <p>
                     <h1 style={{ color: 'darkcyan', fontWeight: 'bold', fontFamily: 'Copperplate, Papyrus, fantasy' }}>
-                        Max Passion!
+                        African Ramen
                     </h1>
                     <hr />
-                    <h2 style={{ color: 'brown', fontWeight: 'bold', fontFamily: 'Malgun Gothic'}}>2nd Recipe</h2>
+                    <h2 style={{ color: 'brown', fontWeight: 'bold', fontFamily: 'Malgun Gothic'}}>Main Course Ramen</h2>
+                </p>
+                <h3>Ingredients:</h3>
+                <p>
+                    Muamba Chicken Soup <br />
+                    <hr />
+                    Chicken Bone Stock <br />
+                    Chicken Bones<br />
+                    Garlic <br />
+                    Red Peppers <br />
+                    Onions <br />
+                    Tomatoes <br />
+                    Chicken Drumettes <br />
+                    Peanut Butter <br />
+                    <hr />
+                    Chashu Topping <br />
+                    <hr />
+                    Chashu <br />
+                    Rolled Pork Shoulder Roast <br />
+                    Chashu Glaze <br />
+                    Garlic <br />
+                    Soy Sauce <br />
+                    Sugar <br />
+                    Wine <br />
+                    Peanuts <br />
+                    <hr />
+                    Wide Style Ramen Noodles<br />                    
                 </p>
             </header>
             
