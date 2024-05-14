@@ -79,7 +79,7 @@ body {
     background-size: cover;
     background-attachment: scroll;
 }
-
+/*otherwordly delicacies*/
 .First {
     background-color: darkgoldenrod;
     width: 300px;
@@ -94,10 +94,11 @@ body {
     text-align: center;
     font-family:'Californian FB';
 }
+/*Curry*/
 .Second {
     background-color: darkgoldenrod;
     width: 500px;
-    height: 518px;
+    height: 570px;
     padding: 50px 30px;
     margin-bottom: 0px;
     position: absolute;
@@ -108,55 +109,55 @@ body {
     text-align: center;
     font-family: 'Californian FB';
 }
-
+/*Ramen*/
 .Third {
     background-color: darkgoldenrod;
     width: 500px;
-    height: 650px;
+    height: 780px;
     padding: 50px 30px;
     margin-bottom: 0px;
     position: absolute;
-    transform: translate(-400px, 1150px);
+    transform: translate(-400px, 1250px);
     box-shadow: 0px 5px 10px darkgreen;
     border-radius: 20px;
     border-block-style: groove;
     text-align: center;
     font-family:'Malgun Gothic';
 }
-
+/*Hotpot*/
 .Fourth {
     background-color: darkgoldenrod;
     width: 500px;
-    height: 525px;
+    height: 550px;
     padding: 50px 30px;
     margin-bottom: 0px;
     position: absolute;
-    transform: translate(150px, 1950px);
+    transform: translate(150px, 2200px);
     box-shadow: 0px 5px 10px darkgreen;
     border-radius: 20px;
     border-block-style: groove;
     text-align: center;
     font-family:'Malgun Gothic';
 }
-
+/*Red Dragon Meal*/
 .Fifth {
     background-color: darkgoldenrod;
     width: 500px;
-    height: 700px;
+    height: 720px;
     padding: 50px 30px;
     margin-bottom: 0px;
     position: absolute;
-    transform: translate(-400px, 2625px);
+    transform: translate(-400px, 2925px);
     box-shadow: 0px 5px 10px darkgreen;
     border-radius: 20px;
     border-block-style: groove;
     text-align: center;
     font-family:'Malgun Gothic';
 }
-
+/*Github Button*/
 .Button1 {
     position: absolute;
-    transform: translate(88px, 2200px);
+    transform: translate(88px, 3800px);
     background-color: navajowhite;
     padding: 5px 10px;
     border-radius: 100px;
@@ -179,7 +180,7 @@ p:hover {
 .GoodbyeDivider2 {
     background-color: firebrick;
 }
-
+/*Space picture*/
 .Divider-Break {
     position: absolute;
     width: 500px;
@@ -192,6 +193,7 @@ p:hover {
     border-radius: 20px;
     border-block-style: groove;
 }
+/*pika running*/
 .Pika {
     position: absolute;
     width: 320px;
@@ -200,31 +202,32 @@ p:hover {
     animation-iteration-count: infinite;
     animation: Pika-Across 4s ease-in-out forwards infinite;
 }
-
+/*catbus gif*/
 .GoodbyeDivider {
     position: absolute;
     width: 100px;
-    transform: translate(-50px, 2170px);
+    transform: translate(-50px, 3770px);
     background-color: navajowhite;
     padding: 5px 10px;
     border-radius: 100px;
     cursor: pointer;
     transition-duration: 0.9s;
 }
+/*basketball dog gif*/
 .GoodbyeDivider2 {
     position: absolute;
     width: 100px;
-    transform: translate(148px, 2150px);
+    transform: translate(148px, 3750px);
     background-color: navajowhite;
     padding: 5px 10px;
     border-radius: 100px;
     cursor: pointer;
     transition-duration: 0.9s;
 }
-
+/*OTD*/
 footer {
     position: center;
     color: floralwhite;
-    transform: translate(100px, 2300px);
+    transform: translate(100px, 3900px);
     font-family: 'Poor Richard';
 }

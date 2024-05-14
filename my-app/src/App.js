@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from './assets/img/githublink.png';
 import button from './assets/img/coraline.jpg';
 import divider from './assets/img/divider.gif';
@@ -8,6 +8,27 @@ import tab from './assets/img/logo.gif';
 import './App.css';
 
 function App() {
+
+    const [isCurryDetailsExpanded, setIsCurryDetailsExpanded] = useState(false);
+
+    const toggleCurryDetails = () => {
+        setIsCurryDetailsExpanded(!isCurryDetailsExpanded);
+    };
+    const [isRamenDetailsExpanded, setIsRamenDetailsExpanded] = useState(false);
+
+    const toggleRamenDetails = () => {
+        setIsRamenDetailsExpanded(!isRamenDetailsExpanded);
+    };
+    const [isHotpotDetailsExpanded, setIsHotpotDetailsExpanded] = useState(false);
+
+    const toggleHotpotDetails = () => {
+        setIsHotpotDetailsExpanded(!isHotpotDetailsExpanded);
+    };
+    const [isRdmDetailsExpanded, setIsRdmDetailsExpanded] = useState(false);
+
+    const toggleRdmDetails = () => {
+        setIsRdmDetailsExpanded(!isRdmDetailsExpanded);
+    };
 
     return (
         <div className="App">
@@ -55,7 +76,15 @@ function App() {
 
                 <h3>Ingredients:</h3>
                 {/*Ingredient List*/ }
-                <p>
+                
+                <button onClick={toggleCurryDetails}>
+                    {isCurryDetailsExpanded? 'Hide Details' : 'Show Details'}
+                </button>
+
+                {/* Conditionally render the recipe details */}
+                {isCurryDetailsExpanded && (
+                    <div>
+                    <p>
                     1lb boneless, skinless chicken breast <br />
                     1lb carrots<br />
                     1 White/Purple Onion<br />
@@ -71,7 +100,9 @@ function App() {
                     1 tbsp <br />
                     1 tbsp Oyster <br />
                     6 Cups Water<br />
-                </p>
+                    </p>
+                    </div>
+                )}
             </header>
 
             {/*Third Paragraph*/}
@@ -82,9 +113,19 @@ function App() {
                     </h1>
                     <hr />
                     <h2 style={{ color: 'brown', fontWeight: 'bold', fontFamily: 'Malgun Gothic'}}>Main Course Ramen</h2>
+                    Using peanuts to enchance the flavor of the chili peppers, rolled pork shoulder smothered in chashu glaze, this ramen will satisfy every craving a hardy soup you've ever had!
                 </p>
+                <hr />
                 <h3>Ingredients:</h3>
-                <p>
+                
+                <button onClick={toggleRamenDetails}>
+                    {isRamenDetailsExpanded? 'Hide Details' : 'Show Details'}
+                </button>
+
+                {/* Conditionally render the recipe details */}
+                {isRamenDetailsExpanded && (
+                    <div>
+                    <p>
                     Muamba Chicken Soup <br />
                     <hr />
                     Chicken Bone Stock <br />
@@ -108,7 +149,9 @@ function App() {
                     Peanuts <br />
                     <hr />
                     Wide Style Ramen Noodles<br />                    
-                </p>
+                    </p>
+                    </div>
+                )}
             </header>
             
             {/*Fourth Paragraph*/}
@@ -123,7 +166,15 @@ function App() {
                     <hr />
                 </p>
                 <h3>Ingredients:</h3>
-                <p>
+                
+                <button onClick={toggleHotpotDetails}>
+                    {isHotpotDetailsExpanded? 'Hide Details' : 'Show Details'}
+                </button>
+
+                {/* Conditionally render the recipe details */}
+                {isHotpotDetailsExpanded && (
+                    <div>
+                    <p>
                     1 Huge Scorpion <br />
                     1 Walking Mushroom <br />
                     2 Mushroom Feet <br />
@@ -131,7 +182,9 @@ function App() {
                     5 Medium sized Invertatoes <br />
                     Dried Slime (To preference) <br />
                     Water (as needed) <br />
-                </p>
+                    </p>
+                    </div>
+                )}
             </header>
 
             {/*Fifth Paragraph*/}
@@ -146,75 +199,39 @@ function App() {
                     <hr />
                 </p>
                 <h3>Ingredients:</h3>
-                <p>
+                
+                <button onClick={toggleRdmDetails}>
+                    {isRdmDetailsExpanded? 'Hide Details' : 'Show Details'}
+                </button>
+
+                {/* Conditionally render the recipe details */}
+                {isRdmDetailsExpanded && (
+                    <div>
+                    <p>
                     Roast Red Dragon <br />
                     <hr />
-                    Dragon Tail Soup <br />
+                    1 kilogram Red Dragon meat<br />
+                    50 ml Wine <br />
+                    Salt and Pepper (to taste)<br />
                     <hr />
-                    Onion Pizza Bread <br />
-                    
-                </p>
-            </header>
-
-            
-
-            {/*Fourth Paragraph*/}
-            <header className="Fourth">
-                <p>
-                    <h1 style={{color: 'darkcyan', fontWeight: 'bold', fontFamily: 'Copperplate, Papyrus, fantasy'}}>
-                        Huge Scorpion and Walking Mushroom Hotpot <br />
-                    </h1>
-                    <hr />
-                    <h2 style={{ color:'brown', fontFamily: 'Malgun Gothic', fontWeight: 'bold' }}>Crustation and Mushroom Hotpot <br /> Serves 3-4 </h2>
-                    What's better than a big ol' pot huge scorpion and possibly sentient mushrooms? I can't think of much. This early adventurer friendly recipe does have some pre-prepared ingredients, but don't worry! They're not neccesary for a well rounded, nutricious meal!
-                    <hr />
-                </p>
-                <h3>Ingredients:</h3>
-                <p>
-                    1 Huge Scorpion <br />
-                    1 Walking Mushroom <br />
-                    2 Mushroom Feet <br />
-                    Seaweed (as needed) <br />
-                    5 Medium sized Invertatoes <br />
-                    Dried Slime (To preference) <br />
-                    Water (as needed) <br />
-                </p>
-            </header>
-
-            {/*Fifth Paragraph*/}
-            <header className="Fifth">
-                <p>
-                    <h1 style={{color: 'darkcyan', fontWeight: 'bold', fontFamily: 'Copperplate, Papyrus, fantasy'}}>
-                        Red Dragon Meal <br />
-                    </h1>
-                    <hr />
-                    <h2 style={{ color:'brown', fontFamily: 'Malgun Gothic', fontWeight: 'bold' }}>Roast, Soup, Pizza <br /> Serves 3-4 </h2>
-                    Have you ever killed a red dragon and thought to yourself, 'What am I gonna do with all this meat?' Well here's your answer! Enjoy a feast fit for even the maddest of mages including a nice Roast Red Dragon, Dragon Tail Soup, and Onion Pizza Bread
-                    <hr />
-                </p>
-                <h3>Ingredients:</h3>
-                <p>
-                    Roast Red Dragon <br />
-                    <hr />
-                    1 kilogram of Red Dragon meat <br />
-                    50 milliliters of wine<br />
-                    Salt and pepper (to taste)<br />
-                    <br />
                     Dragon Tail Soup <br />
                     <hr />
                     1 kilogram Red Dragon Tail<br />
                     1 Onion<br />
-                    1 Turnip<br />
-                    Salt and pepper (to taste)<br />
-                    <br />
+                    5 Turnip<br />
+                    Salt and Pepper (to taste)<br />
+                    <hr />
                     Onion Pizza Bread <br />
                     <hr />
-                    Pizza Dough<br />
+                    Pizza Dough <br />
                     2 Onions<br />
-                    Cheese (as desired)
-                </p>
+                    Cheese (as desired)<br />
+                    </p>
+                    </div>
+                )}
             </header>
 
+            
             {/*Ending Space*/}
             <header className="Ending">
                 <footer>
