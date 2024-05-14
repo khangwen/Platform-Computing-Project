@@ -66,7 +66,7 @@ def metricTracker(user_file, itr, group, user):
     myclient = pymongo.MongoClient("mongodb+srv://khangwen197:HsUFKqdVgto1Qyo5@cluster0.pqitser.mongodb.net/")
     mydb = myclient["CSE4200"]
 
-    mycol = mydb["Metrics4"]
+    mycol = mydb["Iteration3_Metrics"]
 
     # Initialize browser
     driver = webdriver.Firefox()
@@ -102,25 +102,26 @@ def metricTracker(user_file, itr, group, user):
 if __name__ == "__main__":
     group1 = "Control"  
     group2 = "Test"
+    iteration = 3
 
-    metricTracker(user_file2, 0, group1, "User2")
-    metricTracker(user_file6, 0, group1, "User6")
-    metricTracker(user_file7, 0, group1, "User7")
-    metricTracker(user_file13, 0, group1, "User13")
-    metricTracker(user_file17, 0, group1, "User17")
-    metricTracker(user_file20, 0, group1, "User20")
-    metricTracker(user_file27, 0, group1, "User27")
-    metricTracker(user_file54, 0, group1, "User54")
-    metricTracker(user_file56, 0, group1, "User56")
-    metricTracker(user_file58, 0, group1, "User58")
+    metricTracker(user_file2, iteration, group1, "User2")
+    metricTracker(user_file6, iteration, group1, "User6")
+    metricTracker(user_file7, iteration, group1, "User7")
+    metricTracker(user_file13, iteration, group1, "User13")
+    metricTracker(user_file17, iteration, group1, "User17")
+    metricTracker(user_file20, iteration, group1, "User20")
+    metricTracker(user_file27, iteration, group1, "User27")
+    metricTracker(user_file54, iteration, group1, "User54")
+    metricTracker(user_file56, iteration, group1, "User56")
+    metricTracker(user_file58, iteration, group1, "User58")
 
-    metricTracker(user_file1, 0, group2, "User1")
-    metricTracker(user_file12, 0, group2, "User12")
-    metricTracker(user_file15, 0, group2, "User15")
-    metricTracker(user_file16, 0, group2, "User16")
-    metricTracker(user_file34, 0, group2, "User34")
-    metricTracker(user_file35, 0, group2, "User35")
-    metricTracker(user_file40, 0, group2, "User40")
-    metricTracker(user_file42, 0, group2, "User42")
-    metricTracker(user_file47, 0, group2, "User47")
-    metricTracker(user_file60, 0, group2, "User60")
+    metricTracker(user_file1, iteration, group2, "User1")
+    metricTracker(user_file12, iteration, group2, "User12")
+    metricTracker(user_file15, iteration, group2, "User15")
+    metricTracker(user_file16, iteration, group2, "User16")
+    metricTracker(user_file34, iteration, group2, "User34")
+    metricTracker(user_file35, iteration, group2, "User35")
+    metricTracker(user_file40, iteration, group2, "User40")
+    metricTracker(user_file42, iteration, group2, "User42")
+    metricTracker(user_file47, iteration, group2, "User47")
+    metricTracker(user_file60, iteration, group2, "User60")
