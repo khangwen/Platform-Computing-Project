@@ -27,18 +27,7 @@
         /*animation: App-logo-spin infinite 20s linear;*/
     }
 }
-/*
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-*/
+
 .App-link {
   color: #61dafb;
 }
@@ -54,32 +43,20 @@
 
 }
 
-/*
-.Popup {
-    background-color: darkgoldenrod;
-    width: 400px;
-    height: 300px;
-    padding: 50px 30px;
-    margin: auto;
-    position: absolute;
-    transform: translate(200px, 100px);
-    box-shadow: 0px 5px 10px darkgreen;
-    border-radius: 20px;
-    border-block-style: groove;
-    text-align: center;
-    font-family: 'Californian FB';
+@keyframes Border-Across {
+    0% {left: 90%;}
+    100% {left: -400%; right: 0%;}
 }
 
-    */
 body {
-    height: 500vh;
+    height: 515vh;
     width: 100px;
-    background-image: url('./assets/img/background.jpg');
+    background-image: url("background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
 }
-/*otherwordly delicacies*/
+
 .First {
     background-color: darkgoldenrod;
     width: 300px;
@@ -87,7 +64,7 @@ body {
     padding: 50px 30px;
     margin: auto;
     position: absolute;
-    transform: translate(200px, 120px);
+    transform: translate(190px, 120px);
     box-shadow: 0px 5px 10px aliceblue;
     border-radius: 20px;
     border-block-style: groove;
@@ -98,66 +75,67 @@ body {
 .Second {
     background-color: darkgoldenrod;
     width: 500px;
-    height: 570px;
+    height: 555px;
     padding: 50px 30px;
     margin-bottom: 0px;
     position: absolute;
-    transform: translate(150px, 500px);
+    transform: translate(85px, 500px);
     box-shadow: 0px 5px 10px aliceblue;
     border-radius: 20px;
     border-block-style: groove;
     text-align: center;
     font-family: 'Californian FB';
 }
-/*Ramen*/
+/*African Ramen*/
 .Third {
     background-color: darkgoldenrod;
     width: 500px;
-    height: 780px;
+    height: 800px;
     padding: 50px 30px;
     margin-bottom: 0px;
     position: absolute;
-    transform: translate(-400px, 1250px);
+    transform: translate(150px, 1185px);
     box-shadow: 0px 5px 10px darkgreen;
     border-radius: 20px;
     border-block-style: groove;
     text-align: center;
     font-family:'Malgun Gothic';
 }
+
 /*Hotpot*/
 .Fourth {
     background-color: darkgoldenrod;
-    width: 500px;
-    height: 550px;
+    width: 400px;
+    height: 535px;
     padding: 50px 30px;
     margin-bottom: 0px;
     position: absolute;
-    transform: translate(150px, 2200px);
+    transform: translate(-400px, 1150px);
     box-shadow: 0px 5px 10px darkgreen;
     border-radius: 20px;
     border-block-style: groove;
     text-align: center;
-    font-family:'Malgun Gothic';
+    font-family: 'Malgun Gothic';
 }
 /*Red Dragon Meal*/
 .Fifth {
     background-color: darkgoldenrod;
     width: 500px;
-    height: 720px;
+    height: 630px;
     padding: 50px 30px;
     margin-bottom: 0px;
     position: absolute;
-    transform: translate(-400px, 2925px);
+    transform: translate(-415px, 1800px);
     box-shadow: 0px 5px 10px darkgreen;
     border-radius: 20px;
     border-block-style: groove;
     text-align: center;
-    font-family:'Malgun Gothic';
+    font-family: 'Malgun Gothic';
 }
-/*Github Button*/
+/*Button1*/
 .Button1 {
     position: absolute;
-    transform: translate(88px, 3800px);
+    transform: translate(410px, 2100px);
     background-color: navajowhite;
     padding: 5px 10px;
     border-radius: 100px;
@@ -180,20 +158,72 @@ p:hover {
 .GoodbyeDivider2 {
     background-color: firebrick;
 }
-/*Space picture*/
+
+/*Image 1*/
 .Divider-Break {
     position: absolute;
-    width: 500px;
-    height: 700px;
-    transform: translate(-75%, 15%);
+    width: 200px;
+    height: 250px;
+    transform: translate(-185%, 40%);
     background-color: whitesmoke;
-    padding: 30px 30px;
     margin: auto;
-    box-shadow: 5px 5px 10px coral;
-    border-radius: 20px;
+    box-shadow: 5px 5px 10px darkgoldenrod;
+    border-radius: 10px;
     border-block-style: groove;
 }
-/*pika running*/
+/*Image 2*/
+.Divider-Break2 {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    transform: translate(-91%, 100%);
+    background-color: whitesmoke;
+    margin: auto;
+    box-shadow: 5px 5px 10px crimson;
+    border-radius: 10px;
+    border-block-style:ridge;
+}
+/*Image 3*/
+.Divider-Break3 {
+    position: absolute;
+    width: 220px;
+    height: 260px;
+    transform: translate(-175%, 175%);
+    background-color: whitesmoke;
+    margin: auto;
+    box-shadow: 5px 5px 10px yellow;
+    border-radius: 10px;
+    border-block-style: dashed;
+}
+/*Image 4*/
+.Divider-Break4 {
+    position: absolute;
+    width: 220px;
+    height: 260px;
+    transform: translate(-90%, 250%);
+    background-color: whitesmoke;
+    margin: auto;
+    box-shadow: 5px 5px 10px yellow;
+    border-radius: 10px;
+    border-block-style: dashed;
+}
+.Ending-Gif{
+    position: absolute;
+    width: 500px;
+    height: 260px;
+    transform: translate(25%, 865%);
+    margin: auto;
+    border-radius: 10px;
+}
+
+.Border {
+    position: absolute;
+    width: 100px;
+    height: 110px;
+    transform: translate(400%, -10%);
+    animation-iteration-count: infinite;
+    animation: Border-Across 4s ease-in-out forwards infinite;
+}
 .Pika {
     position: absolute;
     width: 320px;
@@ -202,32 +232,32 @@ p:hover {
     animation-iteration-count: infinite;
     animation: Pika-Across 4s ease-in-out forwards infinite;
 }
-/*catbus gif*/
+/*Button2*/
 .GoodbyeDivider {
     position: absolute;
     width: 100px;
-    transform: translate(-50px, 3770px);
+    transform: translate(285px, 2075px);
     background-color: navajowhite;
     padding: 5px 10px;
     border-radius: 100px;
     cursor: pointer;
     transition-duration: 0.9s;
 }
-/*basketball dog gif*/
+/*Button3*/
 .GoodbyeDivider2 {
     position: absolute;
     width: 100px;
-    transform: translate(148px, 3750px);
+    transform: translate(500px, 2080px);
     background-color: navajowhite;
     padding: 5px 10px;
     border-radius: 100px;
     cursor: pointer;
     transition-duration: 0.9s;
 }
-/*OTD*/
+
 footer {
     position: center;
     color: floralwhite;
-    transform: translate(100px, 3900px);
+    transform: translate(375px, 2200px);
     font-family: 'Poor Richard';
 }
