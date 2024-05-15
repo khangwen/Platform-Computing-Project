@@ -1,6 +1,6 @@
 # Final Project
 
-Curating a website within our team to create the best performing website to users using all the tools previosuly learned in this course. The idea is to have a website that will keep people's attention long enough on the wesbite to make a profit.
+Curating a website within our team to create the best performing website to users using all the tools previously learned in this course. The idea is to have a website that will keep people's attention long enough on the website to make a profit.
 
 Time spent: **30** hours spent in total
 
