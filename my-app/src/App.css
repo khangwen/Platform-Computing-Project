@@ -20,7 +20,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
     .App-logo {
-        animation-name:App-Logo-floating;
+        animation-name: App-Logo-floating;
         animation-duration: 5s;
         animation-iteration-count: infinite;
         animation-timing-function: ease-in-out;
@@ -29,29 +29,50 @@
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-Logo-floating {
-    0% {transform:translate(0px, 0px);}
-    50% {transform: translate(0px, 20px);}
-    100% {transform: translate(0px, -0px);}
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    50% {
+        transform: translate(0px, 20px);
+    }
+
+    100% {
+        transform: translate(0px, -0px);
+    }
 }
+
 @keyframes Pika-Across {
-    0% {left: -75%;}
-    100% {left:500%; right:18%;}
+    0% {
+        left: -75%;
+    }
+
+    100% {
+        left: 500%;
+        right: 18%;
+    }
 
 }
 
 @keyframes Border-Across {
-    0% {left: 90%;}
-    100% {left: -400%; right: 0%;}
+    0% {
+        left: 90%;
+    }
+
+    100% {
+        left: -400%;
+        right: 0%;
+    }
 }
 
 body {
     height: 515vh;
     width: 100px;
-    background-image: url("background.jpg");
+    background-image: url("assets/img/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
@@ -69,8 +90,9 @@ body {
     border-radius: 20px;
     border-block-style: groove;
     text-align: center;
-    font-family:'Californian FB';
+    font-family: 'Californian FB';
 }
+
 /*Curry*/
 .Second {
     background-color: darkgoldenrod;
@@ -86,6 +108,7 @@ body {
     text-align: center;
     font-family: 'Californian FB';
 }
+
 /*African Ramen*/
 .Third {
     background-color: darkgoldenrod;
@@ -99,7 +122,7 @@ body {
     border-radius: 20px;
     border-block-style: groove;
     text-align: center;
-    font-family:'Malgun Gothic';
+    font-family: 'Malgun Gothic';
 }
 
 /*Hotpot*/
@@ -117,6 +140,7 @@ body {
     text-align: center;
     font-family: 'Malgun Gothic';
 }
+
 /*Red Dragon Meal*/
 .Fifth {
     background-color: darkgoldenrod;
@@ -132,6 +156,7 @@ body {
     text-align: center;
     font-family: 'Malgun Gothic';
 }
+
 /*Button1*/
 .Button1 {
     position: absolute;
@@ -139,22 +164,27 @@ body {
     background-color: navajowhite;
     padding: 5px 10px;
     border-radius: 100px;
-    cursor: pointer; /*an input for your cursor to change image when hovering over something */
+    cursor: pointer;
+    /*an input for your cursor to change image when hovering over something */
     transition-duration: 0.9s;
 }
+
 button:hover {
-        background-color: firebrick;
-    }
+    background-color: firebrick;
+}
+
 .GoodbyeDivider:hover {
     background-color: firebrick;
 }
+
 p:hover {
     transition-duration: 0.3s;
-    text-shadow: 
-            0 0 5px aliceblue,  
-            0 0 10px antiquewhite,
-            0 0 25px aquamarine;
+    text-shadow:
+        0 0 5px aliceblue,
+        0 0 10px antiquewhite,
+        0 0 25px aquamarine;
 }
+
 .GoodbyeDivider2 {
     background-color: firebrick;
 }
@@ -171,6 +201,7 @@ p:hover {
     border-radius: 10px;
     border-block-style: groove;
 }
+
 /*Image 2*/
 .Divider-Break2 {
     position: absolute;
@@ -181,8 +212,9 @@ p:hover {
     margin: auto;
     box-shadow: 5px 5px 10px crimson;
     border-radius: 10px;
-    border-block-style:ridge;
+    border-block-style: ridge;
 }
+
 /*Image 3*/
 .Divider-Break3 {
     position: absolute;
@@ -195,6 +227,7 @@ p:hover {
     border-radius: 10px;
     border-block-style: dashed;
 }
+
 /*Image 4*/
 .Divider-Break4 {
     position: absolute;
@@ -207,7 +240,8 @@ p:hover {
     border-radius: 10px;
     border-block-style: dashed;
 }
-.Ending-Gif{
+
+.Ending-Gif {
     position: absolute;
     width: 500px;
     height: 260px;
@@ -224,6 +258,7 @@ p:hover {
     animation-iteration-count: infinite;
     animation: Border-Across 4s ease-in-out forwards infinite;
 }
+
 .Pika {
     position: absolute;
     width: 320px;
@@ -232,6 +267,7 @@ p:hover {
     animation-iteration-count: infinite;
     animation: Pika-Across 4s ease-in-out forwards infinite;
 }
+
 /*Button2*/
 .GoodbyeDivider {
     position: absolute;
@@ -243,6 +279,7 @@ p:hover {
     cursor: pointer;
     transition-duration: 0.9s;
 }
+
 /*Button3*/
 .GoodbyeDivider2 {
     position: absolute;
